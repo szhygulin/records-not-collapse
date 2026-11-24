@@ -8,14 +8,14 @@
 
 Panpsychist and Russellian-monist views hold that experience, or proto-experience, belongs to the basic physical world, but they have no agreed answer to *where* in physics it sits. The usual candidates are particles, wavefunction collapse (Orch-OR) and integrated information (IIT).
 
-This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record whose formation produces entropy. On this view the degree of experience tracks the entropy production a system spends on forming persistent records and integrating them into a model it uses to keep itself going.
+This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record whose formation produces entropy. On this view the degree of experience tracks $R = \dot\Sigma\, I / M$: a system's entropy production rate, times the information in the persistent records that its own dynamics draw on, per unit of its mass. Recording events make the records; the measure grades how hard a system runs on them.
 
 The paper:
 
 - surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience, and finds the thesis partially anticipated but not stated as a whole;
 - separates the clock-observers that recent quantum-gravity work needs from the recorder-observers that facts need, and names the missing theorem that would join them;
-- sketches a measure and applies it to stars, processors, logic-gate grids, hot molecules, sleep, seizures and language models;
-- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding that the brain's lead rests on how its records are used, not on what they cost;
+- applies that measure, on which neither dissipation nor storage scores alone, to stars, processors, storage devices, logic-gate grids, hot molecules, sleep, seizures and language models;
+- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding them within a factor of about 300 of each other when bits are counted as storage capacity, with the lead set by the mass of the GPU packages, which no source consulted gives, and the model ahead when bits are counted as functional knowledge;
 - answers seven objections;
 - ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
 
@@ -23,7 +23,7 @@ The paper:
 
 | Path | What it is |
 |---|---|
-| [`paper/paper.md`](paper/paper.md) | Main text (Pandoc Markdown, about 10,600 words) |
+| [`paper/paper.md`](paper/paper.md) | Main text (Pandoc Markdown, about 13,000 words) |
 | [`paper/paper.pdf`](paper/paper.pdf) | Built PDF |
 | [`paper/references.bib`](paper/references.bib) | Bibliography; every entry verified against a primary record |
 | [`paper/figures/ladder.svg`](paper/figures/ladder.svg) | Figure 1, the ladder of observerhood (PNG alongside) |
@@ -53,4 +53,4 @@ The ideas in this paper were developed in dialogue with Claude (Anthropic), and 
 
 ## License
 
-The text and figure are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [`LICENSE`](LICENSE).
+The text and figure are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [`LICENSE`](LICENSE). The scripts (`analysis/napkin.py`, `build.sh`) are licensed under the MIT License; see [`LICENSE-CODE`](LICENSE-CODE). Quotations from other works remain under their own terms.
