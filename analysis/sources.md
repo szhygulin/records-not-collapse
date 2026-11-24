@@ -16,7 +16,6 @@ The **Read** column gives the verification level: *full text*, *abstract* or *ve
 | `PLAST_OF_FAST` | plasticity costs 4.0–11.2% of fast excitatory transmission energy | karbowski2019, [arXiv:1910.07414](https://arxiv.org/abs/1910.07414) | abstract; Table 2 | full text | A model estimate from rat data. The arXiv version is the published *J Neurophysiol* paper. |
 | `FAST_OF_SIGNAL` | postsynaptic glutamate receptors take 50% of signalling energy | howarth2012, [PMC3390818](https://pmc.ncbi.nlm.nih.gov/articles/PMC3390818/) | abstract | full text | Rodent cortex model, assuming a 4 Hz firing rate. |
 | `SIGNAL_OF_TOTAL` | signalling takes at least 55% of brain energy | engl2015, [PMC4560575](https://pmc.ncbi.nlm.nih.gov/articles/PMC4560575/) | Discussion | full text | Inferred from sodium-pump block experiments. |
-| (text only) | protein synthesis takes no more than ~1.3% of brain ATP | engl2015 | "Proteins and phospholipids synthesis…" | full text | A theoretical estimate from rat protein turnover. |
 | `FLY_J_PER_BIT` | about 10 mJ/bit for long-term memory | girard2023, [arXiv:2301.09565](https://arxiv.org/abs/2301.09565) | abstract; Discussion | full text | Unreviewed preprint. Drosophila, from other groups' behavioural data. |
 
 ## GPU and language models
@@ -25,7 +24,7 @@ The **Read** column gives the verification level: *full text*, *abstract* or *ve
 |---|---|---|---|---|---|
 | `P_GPU` | up to 700 W | nvidiah100, [nvidia.com](https://www.nvidia.com/en-us/data-center/h100/) | spec table, H100 SXM, "Max TDP" | vendor page | Rated power, not measured draw. |
 | `FLOPS` | 1,979 TFLOPS BF16 with sparsity, so about 989 dense | nvidiah100; andersch2022, [NVIDIA blog](https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/) | spec table; blog Table 1 (1000 dense, preliminary) | vendor page | Peak figures. |
-| `MFU` | 38–43% BF16 model-FLOPs utilisation | grattafiori2024, [arXiv:2407.21783](https://arxiv.org/abs/2407.21783) | Table 4 | full text | Measured in Llama 3 pre-training. |
+| `MFU_LOW` | 38–43% BF16 model-FLOPs utilisation | grattafiori2024, [arXiv:2407.21783](https://arxiv.org/abs/2407.21783) | Table 4 | full text | Measured in Llama 3 pre-training. |
 | `DIE_CM2` | 814 mm² | andersch2022 | GH100 paragraph; Table 3 | vendor page | |
 | `RHO_SI` | 2.329 g/cm³ | henins1964, [PMC6628575](https://pmc.ncbi.nlm.nih.gov/articles/PMC6628575/) | abstract | full text | |
 | `WAFER_CM` | 775 ± 25 µm for a 300 mm wafer | svmisv029, [SVMI SV029](https://svmi.com/wp-content/uploads/2021/01/SV029.pdf) | geometry table | vendor page | One vendor's sheet, not the SEMI standard. Used as an upper bound on die thickness. |

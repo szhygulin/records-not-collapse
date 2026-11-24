@@ -34,7 +34,7 @@ T_FLY = 300.0              # K, ASSUMED: a fly is near ambient temperature
 # ---- NVIDIA H100 SXM and language models ------------------------------------------
 P_GPU = 700.0              # W, max TDP, nvidiah100
 FLOPS = 1979e12 / 2        # dense BF16 FLOP/s: page figure is with sparsity, nvidiah100; andersch2022
-MFU = (0.38, 0.43)         # BF16 model-FLOPs utilisation in Llama 3 training, grattafiori2024
+MFU_LOW = 0.38             # lowest BF16 model-FLOPs utilisation in Llama 3 training, grattafiori2024
 DIE_CM2 = 8.14             # cm^2 (814 mm^2), andersch2022
 RHO_SI = 2.329             # g/cm^3, henins1964
 WAFER_CM = 0.0775          # cm (775 um, 300 mm wafer), svmisv029; die is no thicker than its wafer
@@ -83,12 +83,12 @@ def main():
     erd_b, erd_g = P_BRAIN * 1e7 / M_BRAIN, P_GPU * 1e7 / die_g      # erg/s/g
     ev = [N_SYN * r for r in RATE]                                  # synaptic events/s
     e_ev = [P_BRAIN / x for x in ev]                                # J/event, whole budget charged
-    e_flop = [P_GPU / FLOPS, P_GPU / (FLOPS * MFU[0])]
+    e_flop = [P_GPU / FLOPS, P_GPU / (FLOPS * MFU_LOW)]
     print("Table 2. Dissipation\n")
     print("| Quantity | Human brain | One H100 GPU |\n|---|---|---|")
     print(f"| Power (W) | {sci(P_BRAIN)} | {sci(P_GPU)} |")
     print(f"| Mass (g) | {sci(M_BRAIN)} | ≤ {die_g:.1f} (die) |")
-    print(f"| Energy rate density (erg s$^{{-1}}$ g$^{{-1}}$) | {sci(erd_b)} | ≈ {sci(erd_g)} (module power over die mass) |")
+    print(f"| Energy rate density (erg s$^{{-1}}$ g$^{{-1}}$) | {sci(erd_b)} | ≥ {sci(erd_g)} (module power over die mass) |")
     print(f"| Entropy production ($k_B$ s$^{{-1}}$) | {sci(sig_b)} | {sci(sig_g)} |")
     print(f"| Landauer ceiling (bit erasures s$^{{-1}}$) | {sci(P_BRAIN / lb)} | {sci(P_GPU / lg)} |")
     print(f"| Elementary events s$^{{-1}}$ | {rng(*sorted(ev))} synaptic | {sci(FLOPS)} operations (peak) |")

@@ -7,7 +7,7 @@ Review conducted 24 November 2026 for the paper "Records, Not Collapse". The pap
 **Partially anticipated.** No peer-reviewed source was found that states the paper's thesis as a whole. The thesis is the conjunction of four claims:
 
 1. If panpsychism or Russellian monism is true, then the irreversible recording event is the best physical bearer of graded proto-experience, ahead of particles, collapse events and integrated information as such.
-2. Its degree tracks the entropy the system spends, per gram, on forming persistent records that are integrated into its model of itself: $R = \frac{1}{M}\sum_r \Delta S_r\, p_r\, u_r$, with $\Delta S_r$ the record's Landauer price, $p_r$ its persistence and $u_r$ its integration into the self-model.
+2. Its degree tracks the least entropy the system must spend, per gram, on forming persistent records that are integrated into its model of itself: $R = \frac{1}{M}\sum_r \Delta S_r\, p_r\, u_r$, with $\Delta S_r$ the record's Landauer price, $p_r$ its persistence and $u_r$ its integration into the self-model.
 3. Dissipation without such records, and integrated structure that forms none, both score near zero.
 4. It is to be tested against the metabolic confound in brain data.
 
@@ -17,13 +17,13 @@ Each *component* has precedents.
 |---|---|---|
 | (i) records, irreversibility or memory as the bearer of the mental | Whitehead's "objective immortality" of perished occasions; Hering, Butler, Semon, Bergson and Peirce on memory and habit as the mark of mind; Rovelli (2022) on the physics of traces; Fields, Glazebrook & Levin (2021); Peyru (2026, preprint) | Whitehead and the memory tradition have no thermodynamics of records. Rovelli makes no claim about experience. Fields et al. restrict their scale-free hypothesis to living systems and make no metaphysical claim. Peyru (abstract only) has no measure that grades records by the entropy spent forming them and by their integration into the system's model of itself. |
 | (ii) a graded measure tied to entropy production | Nonequilibrium-brain literature (Sanz Perl et al. 2021; Gilson et al. 2023; Berjaga-Buisan et al. 2026); Ito, Oizumi & Amari (2020); Ganesh (2020); Noirmont (2026, preprint) | The empirical work is about markers in brains only. Ito et al. give a formal bridge with no claim about experience. Ganesh gives necessary conditions, not gradation. Noirmont proposes an emergentist threshold. |
-| (iii) the system's own use of its records | Kolchinsky & Wolpert (2018) on semantic information, which supply the interventional template for the integration factor $u_r$; the free-energy principle (Friston 2010, 2013); Solms & Friston (2018); Levin (2019) | No link to records as bearers of experience, and no comparative argument against other loci. |
+| (iii) integration of records into a self-model the system uses to keep itself in existence | Kolchinsky & Wolpert (2018) on semantic information, which supply the interventional template for the integration factor $u_r$; the free-energy principle (Friston 2010, 2013); Solms & Friston (2018); Levin (2019) | No link to records as bearers of experience, and no comparative argument against other loci. |
 
 **Grounds for the novelty claim.** The paper claims novelty only for three things:
 
 - the conditional, comparative argument across the four candidate loci;
 - the explicit contrast between the clock-observers of quantum gravity and recorder-observers, with the missing "bridge theorem" named;
-- the measure sketch, which counts the entropy spent, per gram (after Chaisson's energy rate density), on forming persistent records that are integrated into the system's model of itself, so that neither dissipation, nor storage, nor integrated structure scores alone. It uses the records' Landauer price, not the dissipation spent, which follows Sagawa & Ueda (2009) in needing no attribution of dissipation to places, and it takes Kolchinsky & Wolpert's interventional method as the template for the integration factor $u_r$. The product of dissipation per gram and information, $E\,I/M$, enters only as a check on information-only measures, which it shows still favour processors. The claim is joined to an empirical test designed against the metabolic confound.
+- the measure sketch, which counts the least entropy a system must spend, per gram (after Chaisson's energy rate density), on forming persistent records that are integrated into the system's model of itself, so that neither dissipation, nor storage, nor integrated structure scores alone. It uses the records' Landauer price, not the dissipation spent, which follows Sagawa & Ueda (2009) in needing no attribution of dissipation to places, and it takes Kolchinsky & Wolpert's interventional method as the template for the integration factor $u_r$. The product of dissipation per gram and information, $E\,I/M$, enters only as a check on information-only measures: it removes their verdict that an inactive XOR grid is highly conscious, but it still favours processors over brains. The claim is joined to an empirical test designed against the metabolic confound.
 
 **Effect on the paper's framing.** No change to the thesis was needed. The paper cites the partial anticipations in §2 and states what it adds (§2.10). Two framings *were* narrowed by the review, and the details are in `corrections.md`:
 
@@ -92,7 +92,7 @@ The paper does not use these.
 |---|---|
 | Penrose's "1 in 10^(10^123)" estimate (*The Emperor's New Mind*, 1989) | No readable text; every archive.org scan is restricted |
 | Wheeler, "Law without law" (1983), and the phrase "irreversible act of amplification" | The text could not be read, and the 1983 chapter metadata was not confirmed |
-| Hameroff & Penrose (2014), Hameroff (2019) and Hameroff & Powell (2008) on ubiquitous, non-orchestrated OR events as proto-conscious moments | Hameroff & Penrose: full text blocked (403); only the abstract was read. Hameroff (2019), *Activitas Nervosa Superior* 61(1–2):31–40, doi:10.1007/s41470-019-00053-0: metadata confirmed in Crossref and OpenAlex, but neither holds an abstract and no full text was read, so the claim is unverified and the paper is not cited. Hameroff & Powell: chapter confirmed in OpenAlex (pp. 109–127, 2008-12-19), closed access; PhilPapers refused automated access (403); no text read |
+| Hameroff & Penrose (2014), Hameroff (2019) and Hameroff & Powell (2008) on ubiquitous, non-orchestrated OR events as proto-conscious moments | Hameroff & Penrose: full text blocked (403); only the abstract was read. Hameroff (2019), *Activitas Nervosa Superior* 61(1–2):31–40, doi:10.1007/s41470-019-00053-0: metadata confirmed in Crossref and OpenAlex, but neither holds an abstract and no full text was read, so the claim is unverified and Hameroff (2019) is not cited. Hameroff & Powell: chapter confirmed in OpenAlex (pp. 109–127, 2008-12-19), closed access; PhilPapers refused automated access (403); no text read |
 | A passage in Strawson (2006) on vitalism or the emergence of life | No readable full text; SEP's account mentions only the liquidity analogy |
 | Number of signatories of the 2023 IIT letter | The PDF timed out |
 | Seager (1995), JCS 2(3):272–288 | Metadata from secondary citations only; not needed |
@@ -287,26 +287,18 @@ Tiers:
 | herculanohouzel2012 | A | PMC full text: brain ~1.5 kg (§5.6) |
 | tang2001 | A | Europe PMC abstract: $1.64\times10^{14}$ neocortical synapses |
 | lennie2003 | A | Author PDF: 0.16 and 0.94 spikes/s/neuron sustainable |
-| engl2015 | A | Europe PMC full text: signalling ≥ 55%; protein synthesis ≤ 1.3% |
+| engl2015 | A | Europe PMC full text: signalling ≥ 55% |
 | howarth2012 | A | PMC full text: postsynaptic glutamate receptors 50% of signalling |
 | karbowski2019 | A | arXiv text of the published paper: plasticity 4.0–11.2% of fast transmission |
 | girard2023 | P | Full text read (arXiv): ~10 mJ/bit for long-term memory in Drosophila |
-| bartol2015 | A | Europe PMC full text: 26 strengths, 4.7 bits per synapse |
 | landauer1986 | A | PDF text: ~$10^9$ bits; 1.2 and 2.3 bit/s; loss rate Table 1 |
-| attardo2015 | A | PMC full text: mean spine lifetime ~1–2 weeks (mouse CA1) |
-| holtmaat2005 | A | Europe PMC abstract: most thick neocortical spines persist for months |
-| stuart1998 | A | PMC full text: membrane time constant 12.4 and 20.9 ms |
 | nvidiah100 | A | Vendor page: 700 W TDP; 1,979 TFLOPS BF16 with sparsity |
 | andersch2022 | A | Vendor blog: 814 mm², 80 billion transistors, 1000 TFLOPS dense (preliminary) |
 | grattafiori2024 | A | arXiv PDF: Table 3 architecture; Table 4 utilisation; 16K GPUs |
 | henins1964 | A | PMC full text: silicon density 2.329 g/cm³ |
 | svmisv029 | A | Vendor sheet: 300 mm wafer 775 ± 25 µm |
-| nvidiadgxh100 | A | Vendor user guide: 130.45 kg system weight, 10.2 kW max |
-| nvidiahgxpcf | A | Vendor sheet: HGX H100 8-GPU baseboard, 24 kg |
 | colombatto2024 | A | Crossref record and OUP full text: 1–100 rating of ChatGPT's capacity for conscious experience, n = 300 US residents, 67% above 1, rising with usage (future-work study, §8) |
 | epochai2026 | D | Epoch AI "Data on AI models" page and documentation: fields, CC BY 4.0 (future-work study, §8) |
-| samsi2023 | A | arXiv text: 3–4 J per output token, LLaMA 65B (estimate) |
-| elsworth2025 | P | Technical report, full text read (arXiv): 0.24 Wh median Gemini Apps text prompt |
 | meta2024 | A | GitHub model card: 30.84M H100 hours for 405B at 700 W |
 | patterson2021 | A | arXiv text: GPT-3 1,287 MWh |
 | allenzhu2024 | A | arXiv text: 2 bits of knowledge per parameter |

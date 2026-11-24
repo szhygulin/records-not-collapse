@@ -6,7 +6,7 @@ This plan expands §8 of the paper. It describes a study; it does not report one
 
 Does the entropy production, or time-irreversibility, of large-scale brain dynamics track the level of consciousness **after** controlling for signal power, signal variance, and metabolic or activity proxies?
 
-The paper's thesis predicts **yes**, on the assumption that measured irreversibility is a proxy for $R$ that also includes activity forming no lasting, used records. The record view predicts that the effect survives the controls if the excess over power and metabolism reflects record formation (paper §8). On its measure, metabolism is not itself a factor; a **no** would mean that within brains irreversibility adds nothing to power and metabolism as a proxy for $R$ (paper §5.3). The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
+The paper's thesis predicts **yes**, on the assumption that the irreversibility left after controlling for power and metabolism reflects the formation of lasting, integrated records (paper §8). Measured irreversibility is at best a proxy for $R$, since it also includes activity that forms no such records. On the measure, metabolism is not itself a factor (paper §5.3); a **no** would mean that irreversibility tracks activity and nothing more (paper §8). The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
 
 ## 2. Why this has not been settled
 
@@ -86,7 +86,7 @@ For each subject, state and parcel or channel, compute:
 
 ## 8. Extensions (lower priority)
 
-- Relate irreversibility during retrieval or replay to the amount of learned material drawn on, as a crude proxy for the rate at which lasting, used records are formed.
+- Relate irreversibility during encoding to later memory, as a crude behavioural proxy for the rate at which lasting, integrated records are formed.
 - Test whether irreversibility predicts consciousness better than the perturbational complexity index (Casali et al. 2013) when the two are measured together.
 - Apply the same pipeline to datasets with dissociated states, such as ketamine and disorders of consciousness, if access is granted.
 

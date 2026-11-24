@@ -8,7 +8,7 @@
 
 Panpsychist and Russellian-monist views hold that experience, or proto-experience, belongs to the basic physical world, but they have no agreed answer to *where* in physics it sits. The usual candidates are particles, wavefunction collapse (Orch-OR) and integrated information (IIT).
 
-This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record, which produces entropy. On this view a system's degree of experience tracks the entropy it spends, per gram, on forming persistent records that are integrated into its model of itself.
+This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record, which produces entropy. On this view a system's degree of experience tracks the least entropy it must spend, per gram, on forming persistent records that are integrated into its model of itself.
 
 The paper:
 
