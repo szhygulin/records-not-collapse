@@ -7,8 +7,8 @@ Review conducted 24 November 2026 for the paper "Records, Not Collapse". The pap
 **Partially anticipated.** No peer-reviewed source was found that states the paper's thesis as a whole. The thesis is the conjunction of four claims:
 
 1. If panpsychism or Russellian monism is true, then the irreversible recording event is the best physical bearer of graded proto-experience, ahead of particles, collapse events and integrated information as such.
-2. Its degree tracks entropy production spent on forming persistent records that are integrated into, and used by, a self-maintaining model.
-3. This is to be distinguished from erasure and from raw dissipation.
+2. Its degree tracks $R = \dot\Sigma\, I / M$: entropy production rate, times the information in the persistent records that the system's own dynamics draw on, per unit mass.
+3. Dissipation without such records, and records without dissipation, both score zero.
 4. It is to be tested against the metabolic confound in brain data.
 
 Each *component* has precedents.
@@ -17,13 +17,13 @@ Each *component* has precedents.
 |---|---|---|
 | (i) records, irreversibility or memory as the bearer of the mental | Whitehead's "objective immortality" of perished occasions; Hering, Butler, Semon, Bergson and Peirce on memory and habit as the mark of mind; Rovelli (2022) on the physics of traces; Fields, Glazebrook & Levin (2021); Peyru (2026, preprint) | Whitehead and the memory tradition have no thermodynamics of records. Rovelli makes no claim about experience. Fields et al. restrict their scale-free hypothesis to living systems and make no metaphysical claim. Peyru (abstract only) has no gradation by entropy spent on records and no self-model. |
 | (ii) a graded measure tied to entropy production | Nonequilibrium-brain literature (Sanz Perl et al. 2021; Gilson et al. 2023; Berjaga-Buisan et al. 2026); Ito, Oizumi & Amari (2020); Ganesh (2020); Noirmont (2026, preprint) | The empirical work is about markers in brains only. Ito et al. give a formal bridge with no claim about experience. Ganesh gives necessary conditions, not gradation. Noirmont proposes an emergentist threshold. |
-| (iii) self-maintenance and self-modelling as amplifiers | Kolchinsky & Wolpert (2018) on semantic information; the free-energy principle (Friston 2010, 2013); Solms & Friston (2018); Levin (2019) | No link to records as bearers of experience, and no comparative argument against other loci. |
+| (iii) the system's own use of its records | Kolchinsky & Wolpert (2018) on semantic information; the free-energy principle (Friston 2010, 2013); Solms & Friston (2018); Levin (2019) | No link to records as bearers of experience, and no comparative argument against other loci. |
 
 **Grounds for the novelty claim.** The paper claims novelty only for three things:
 
 - the conditional, comparative argument across the four candidate loci;
 - the explicit contrast between the clock-observers of quantum gravity and recorder-observers, with the missing "bridge theorem" named;
-- the measure sketch that uses Still et al. (2012) and Sagawa & Ueda (2009) to separate integrated recording from erasure and from non-predictive dissipation, together with an empirical test designed against the metabolic confound.
+- the measure sketch, which multiplies Chaisson's mass-normalised dissipation by the information in records the system's dynamics draw on, so that neither dissipation nor storage scores alone, and which follows Sagawa & Ueda (2009) in taking whole-system rather than per-record entropy; together with an empirical test designed against the metabolic confound.
 
 **Effect on the paper's framing.** No change to the thesis was needed. The paper cites the partial anticipations in §2 and states what it adds (§2.10). Two framings *were* narrowed by the review, and the details are in `corrections.md`:
 
@@ -113,7 +113,7 @@ Tiers:
 - **A**: metadata confirmed from a primary record, *and* the specific claim the paper makes was checked against the source's text or abstract.
 - **B**: metadata confirmed from a primary record (Crossref, arXiv, publisher, Europe PMC, OpenLibrary or archive.org). The paper uses the work only for what its title, abstract or a verified secondary source (SEP, IEP, publisher blurb) states, or for its standard characterisation.
 - **S**: metadata confirmed only through secondary citations, such as an author eprint, a PhilPapers or PhilArchive listing, or repository records. These are *Journal of Consciousness Studies* papers, which carry no DOIs.
-- **P**: an unreviewed preprint. Only the abstract was read.
+- **P**: an unreviewed preprint or technical report. The note says whether its full text or only its abstract was read.
 - **D**: a dataset, confirmed at its landing page or repository.
 
 | Key | Tier | Note |
@@ -285,25 +285,27 @@ Tiers:
 | schneider2026 | P | Book chapter; abstract via OpenAlex |
 | balasubramanian2021 | A | PMC full text: ~20 W, 17–20 W from glucose uptake (§5.6) |
 | herculanohouzel2012 | A | PMC full text: brain ~1.5 kg (§5.6) |
-| tang2001 | B | Europe PMC abstract: $1.64\times10^{14}$ neocortical synapses |
+| tang2001 | A | Europe PMC abstract: $1.64\times10^{14}$ neocortical synapses |
 | lennie2003 | A | Author PDF: 0.16 and 0.94 spikes/s/neuron sustainable |
 | engl2015 | A | Europe PMC full text: signalling ≥ 55%; protein synthesis ≤ 1.3% |
 | howarth2012 | A | PMC full text: postsynaptic glutamate receptors 50% of signalling |
 | karbowski2019 | A | arXiv text of the published paper: plasticity 4.0–11.2% of fast transmission |
-| girard2023 | P | arXiv full text read: ~10 mJ/bit for long-term memory in Drosophila |
+| girard2023 | P | Full text read (arXiv): ~10 mJ/bit for long-term memory in Drosophila |
 | bartol2015 | A | Europe PMC full text: 26 strengths, 4.7 bits per synapse |
 | landauer1986 | A | PDF text: ~$10^9$ bits; 1.2 and 2.3 bit/s; loss rate Table 1 |
 | zheng2025 | A | arXiv v2 text and Europe PMC record: ~10 bit/s behaviour, ~$10^9$ bit/s sensory |
 | attardo2015 | A | PMC full text: mean spine lifetime ~1–2 weeks (mouse CA1) |
-| holtmaat2005 | B | Europe PMC abstract: most thick neocortical spines persist for months |
+| holtmaat2005 | A | Europe PMC abstract: most thick neocortical spines persist for months |
 | stuart1998 | A | PMC full text: membrane time constant 12.4 and 20.9 ms |
 | nvidiah100 | A | Vendor page: 700 W TDP; 1,979 TFLOPS BF16 with sparsity |
 | andersch2022 | A | Vendor blog: 814 mm², 80 billion transistors, 1000 TFLOPS dense (preliminary) |
 | grattafiori2024 | A | arXiv PDF: Table 3 architecture; Table 4 utilisation; 16K GPUs |
 | henins1964 | A | PMC full text: silicon density 2.329 g/cm³ |
 | svmisv029 | A | Vendor sheet: 300 mm wafer 775 ± 25 µm |
+| nvidiadgxh100 | A | Vendor user guide: 130.45 kg system weight, 10.2 kW max |
+| nvidiahgxpcf | A | Vendor sheet: HGX H100 8-GPU baseboard, 24 kg |
 | samsi2023 | A | arXiv text: 3–4 J per output token, LLaMA 65B (estimate) |
-| elsworth2025 | A | arXiv text: 0.24 Wh median Gemini Apps text prompt |
+| elsworth2025 | P | Technical report, full text read (arXiv): 0.24 Wh median Gemini Apps text prompt |
 | meta2024 | A | GitHub model card: 30.84M H100 hours for 405B at 700 W |
 | patterson2021 | A | arXiv text: GPT-3 1,287 MWh |
 | allenzhu2024 | A | arXiv text: 2 bits of knowledge per parameter |

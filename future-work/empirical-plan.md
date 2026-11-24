@@ -6,7 +6,7 @@ This plan expands §8 of the paper. It describes a study; it does not report one
 
 Does the entropy production, or time-irreversibility, of large-scale brain dynamics track the level of consciousness **after** controlling for signal power, signal variance, and metabolic or activity proxies?
 
-The paper's thesis predicts **yes**. The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
+The paper's thesis predicts **yes**. On its measure, metabolism is one factor; a **no** would mean that within brains the measure reduces to energy rate density (paper §5.3). The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
 
 ## 2. Why this has not been settled
 
@@ -80,7 +80,7 @@ For each subject, state and parcel or channel, compute:
 
 - **Supports the record view.** The partial effect of consciousness level on irreversibility survives the covariates and the surrogate normalisation, with the same sign as the uncontrolled effect, across at least two independent datasets.
 - **Refutes the empirical claim.** With adequate power, the partial effect is null once power, variance and activity are controlled.
-- **Refutes in seizures.** Once data with awareness labels exist, if whole-brain irreversibility, net of covariates, is *higher* during seizures with impaired awareness than during conscious baseline, then the claim that irreversibility marks consciousness fails. The paper's rescue, that seizures dissipate without forming integrated records, then requires an independent measure of record formation. Without one, the rescue is not accepted.
+- **Refutes in seizures.** Once data with awareness labels exist, if whole-brain irreversibility, net of covariates, is *higher* during seizures with impaired awareness than during conscious baseline, then the claim that irreversibility marks consciousness fails. The paper's rescue, that in seizures the brain's dynamics carry little information about its stored records, then requires an independent measure of that information. Without one, the rescue is not accepted.
 
 **Power.** Not computed here. Base it on the effect sizes reported in Gilson et al. (2023) and Sanz Perl et al. (2021), discounted for the expected shrinkage under covariate control.
 
