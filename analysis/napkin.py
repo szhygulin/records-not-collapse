@@ -3,7 +3,7 @@
 
 The measure of paper section 4 is R = Sigma_dot * I / M: entropy production rate
 (k_B/s) times the information in the operative records the system's dynamics
-draw on (bit), per gram of the system. Table D computes it.
+draw on (bit), per gram of the system. Table 5 computes it.
 
 Every input below carries the citation key of its source in paper/references.bib;
 analysis/sources.md gives the locator, URL and verification level of each.
@@ -45,6 +45,7 @@ RHO_SI = 2.329             # g/cm^3, henins1964
 WAFER_CM = 0.0775          # cm (775 um, 300 mm wafer), svmisv029; die is no thicker than its wafer
 # Larger boundaries around 8 H100 GPUs
 HGX_KG = 24.0              # kg, HGX H100 8-GPU baseboard ("Product weight 24 kg"), nvidiahgxpcf
+HGX_W = 5600.0             # W, same sheet, "Typical power consumption 5600 W"
 DGX_KG = 130.45            # kg, DGX H100 system weight (287.6 lb), nvidiadgxh100
 DGX_W = 10.2e3             # W, DGX H100 max system power, nvidiadgxh100
 # Llama 3 70B (grattafiori2024 Table 3)
@@ -60,11 +61,11 @@ WH_PROMPT_GOOGLE = 0.24    # Wh per median Gemini Apps text prompt, elsworth2025
 # Training
 GPU_H_405B = 30.84e6       # GPU hours, Llama 3.1 405B, meta2024 (700 W each)
 N_GPU_405B = 16384         # GPUs, grattafiori2024 ("up to 16K")
-PARAMS_405B = 405e9
+PARAMS_405B = 405e9        # meta2024 (model card)
 BITS_PER_PARAM = 2.0       # extractable knowledge capacity, allenzhu2024
 WEIGHT_BITS = 16           # ASSUMED: BF16 weights (capacity count); FP8 would halve it
 E_GPT3 = 1287e6 * 3600     # J (1,287 MWh), patterson2021
-PARAMS_GPT3 = 175e9
+PARAMS_GPT3 = 175e9        # patterson2021 (Table 4)
 
 
 def sci(x):
@@ -130,7 +131,8 @@ def main():
     k405, kgpt3, k70 = (n * BITS_PER_PARAM for n in (PARAMS_405B, PARAMS_GPT3, PARAMS_70B))
 
     def one_minus_p(tr, td):
-        return td / (tr + td)
+        """1 - p_r for p_r = max(0, 1 - td/tr) (paper section 4)."""
+        return min(1.0, td / tr)
 
     print("Table 3. Records\n")
     print("| Record | Information | Formation rate (bit s$^{-1}$) | Lifetime $\\tau_r$ | $1-p_r$ |\n|---|---|---|---|---|")
@@ -164,21 +166,23 @@ def main():
           f"Training cost per bit relative to the human brain: at least {lo_r:.2f}x to {hi_r:.0f}x\n")
 
     # ---- The measure R = Sigma_dot * I / M
-    rows = [("Human brain", sig_b, M_BRAIN, LTM_TOTAL, cap)]
-    for label, params in (("Llama 3 70B inference", PARAMS_70B), ("Llama 3.1 405B training", PARAMS_405B)):
+    # (name, Sigma_dot, M, I_functional, I_capacity, M qualifier, R-functional qualifier, R-capacity qualifier)
+    rows = [("Human brain", sig_b, M_BRAIN, LTM_TOTAL, cap, "", "", "")]
+    for label, params in (("Llama 3 70B inference", PARAMS_70B), ("Llama 3.1 405B training, per 8 H100", PARAMS_405B)):
         i_f, i_c = params * BITS_PER_PARAM, params * WEIGHT_BITS
         rows += [
-            (f"{label}, 8 H100: GPU dies", 8 * sig_g, 8 * die_g, i_f, i_c),
-            (f"{label}, 8 H100: HGX baseboard", 8 * sig_g, HGX_KG * 1e3, i_f, i_c),
-            (f"{label}, 8 H100: DGX server", sigma(DGX_W, T_DC), DGX_KG * 1e3, i_f, i_c),
+            # die mass is an upper bound and leaves out the HBM that holds the weights
+            (f"{label}: GPU dies only", 8 * sig_g, 8 * die_g, i_f, i_c, "≤ ", "~ ", "≥ "),
+            (f"{label}: HGX baseboard", sigma(HGX_W, T_DC), HGX_KG * 1e3, i_f, i_c, "", "≤ ", ""),
+            (f"{label}: DGX server", sigma(DGX_W, T_DC), DGX_KG * 1e3, i_f, i_c, "", "≤ ", ""),
         ]
     print("Table 5. The measure $R = \\dot\\Sigma\\, I / M$\n")
     print("| System and boundary | $\\dot\\Sigma$ ($k_B$ s$^{-1}$) | $M$ (g) | $\\dot\\Sigma/M$ ($k_B$ s$^{-1}$ g$^{-1}$) "
           "| $I$, functional (bit) | $I$, capacity (bit) | $R$, functional | $R$, capacity |\n|---|---|---|---|---|---|---|---|")
     res = {}
-    for name, s_, m, i_f, i_c in rows:
-        q = "" if name.startswith("Human") else "≤ "
-        print(f"| {name} | {sci(s_)} | {sci(m)} | {sci(s_ / m)} | {q}{sci(i_f)} | {sci(i_c)} | {q}{sci(s_ * i_f / m)} | {sci(s_ * i_c / m)} |")
+    for name, s_, m, i_f, i_c, qm, qf, qc in rows:
+        qi = "" if name.startswith("Human") else "≤ "
+        print(f"| {name} | {sci(s_)} | {qm}{sci(m)} | {sci(s_ / m)} | {qi}{sci(i_f)} | {sci(i_c)} | {qf}{sci(s_ * i_f / m)} | {qc}{sci(s_ * i_c / m)} |")
         res[name] = (s_ / m, s_ * i_f / m, s_ * i_c / m)
     b = res["Human brain"]
     print("\nRatios to the human brain (density; R functional; R capacity):")
@@ -186,7 +190,11 @@ def main():
         if not name.startswith("Human"):
             print(f"  {name}: {sci(v[0] / b[0])}; {sci(v[1] / b[1])}; {sci(v[2] / b[2])}")
     print(f"  Brain capacity / 70B capacity: {sci(cap / (PARAMS_70B * WEIGHT_BITS))}; / 405B: {sci(cap / (PARAMS_405B * WEIGHT_BITS))}")
-    print(f"  Live KV cache / 70B knowledge bound: {sci(kv_live_info / (PARAMS_70B * BITS_PER_PARAM))}")
+    print(f"  Live KV cache (output tokens) / 70B knowledge bound: {sci(kv_live_info / (PARAMS_70B * BITS_PER_PARAM))}")
+    print("Operative information a chip needs to equal the brain's R (functional; capacity), by density:")
+    for name in ("Llama 3 70B inference: GPU dies only", "Llama 3 70B inference: HGX baseboard", "Llama 3 70B inference: DGX server"):
+        d = res[name][0]
+        print(f"  {name.split(': ')[1]}: {sci(b[1] / d)} bit; {sci(b[2] / d)} bit")
 
 
 if __name__ == "__main__":

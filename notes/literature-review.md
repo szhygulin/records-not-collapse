@@ -15,7 +15,7 @@ Each *component* has precedents.
 
 | Component | Closest prior work | What it lacks relative to the thesis |
 |---|---|---|
-| (i) records, irreversibility or memory as the bearer of the mental | Whitehead's "objective immortality" of perished occasions; Hering, Butler, Semon, Bergson and Peirce on memory and habit as the mark of mind; Rovelli (2022) on the physics of traces; Fields, Glazebrook & Levin (2021); Peyru (2026, preprint) | Whitehead and the memory tradition have no thermodynamics of records. Rovelli makes no claim about experience. Fields et al. restrict their scale-free hypothesis to living systems and make no metaphysical claim. Peyru (abstract only) has no gradation by entropy spent on records and no self-model. |
+| (i) records, irreversibility or memory as the bearer of the mental | Whitehead's "objective immortality" of perished occasions; Hering, Butler, Semon, Bergson and Peirce on memory and habit as the mark of mind; Rovelli (2022) on the physics of traces; Fields, Glazebrook & Levin (2021); Peyru (2026, preprint) | Whitehead and the memory tradition have no thermodynamics of records. Rovelli makes no claim about experience. Fields et al. restrict their scale-free hypothesis to living systems and make no metaphysical claim. Peyru (abstract only) has no measure that combines dissipation with the information in records the system's dynamics draw on. |
 | (ii) a graded measure tied to entropy production | Nonequilibrium-brain literature (Sanz Perl et al. 2021; Gilson et al. 2023; Berjaga-Buisan et al. 2026); Ito, Oizumi & Amari (2020); Ganesh (2020); Noirmont (2026, preprint) | The empirical work is about markers in brains only. Ito et al. give a formal bridge with no claim about experience. Ganesh gives necessary conditions, not gradation. Noirmont proposes an emergentist threshold. |
 | (iii) the system's own use of its records | Kolchinsky & Wolpert (2018) on semantic information; the free-energy principle (Friston 2010, 2013); Solms & Friston (2018); Levin (2019) | No link to records as bearers of experience, and no comparative argument against other loci. |
 
@@ -23,7 +23,7 @@ Each *component* has precedents.
 
 - the conditional, comparative argument across the four candidate loci;
 - the explicit contrast between the clock-observers of quantum gravity and recorder-observers, with the missing "bridge theorem" named;
-- the measure sketch, which multiplies Chaisson's mass-normalised dissipation by the information in records the system's dynamics draw on, so that neither dissipation nor storage scores alone, and which follows Sagawa & Ueda (2009) in taking whole-system rather than per-record entropy; together with an empirical test designed against the metabolic confound.
+- the measure sketch, which multiplies mass-normalised entropy production (after Chaisson's energy rate density) by the information in records the system's dynamics draw on, so that neither dissipation nor storage scores alone, and which follows Sagawa & Ueda (2009) in taking whole-system rather than per-record entropy; together with an empirical test designed against the metabolic confound.
 
 **Effect on the paper's framing.** No change to the thesis was needed. The paper cites the partial anticipations in §2 and states what it adds (§2.10). Two framings *were* narrowed by the review, and the details are in `corrections.md`:
 
@@ -282,7 +282,7 @@ Tiers:
 | noirmont2026 | P | Abstract via OpenAlex |
 | yuan2026 | P | Abstract via OpenAlex |
 | devine2026 | P | Abstract via OpenAlex |
-| schneider2026 | P | Book chapter; abstract via OpenAlex |
+| schneider2026 | B | Book chapter; abstract via OpenAlex |
 | balasubramanian2021 | A | PMC full text: ~20 W, 17–20 W from glucose uptake (§5.6) |
 | herculanohouzel2012 | A | PMC full text: brain ~1.5 kg (§5.6) |
 | tang2001 | A | Europe PMC abstract: $1.64\times10^{14}$ neocortical synapses |
@@ -293,7 +293,6 @@ Tiers:
 | girard2023 | P | Full text read (arXiv): ~10 mJ/bit for long-term memory in Drosophila |
 | bartol2015 | A | Europe PMC full text: 26 strengths, 4.7 bits per synapse |
 | landauer1986 | A | PDF text: ~$10^9$ bits; 1.2 and 2.3 bit/s; loss rate Table 1 |
-| zheng2025 | A | arXiv v2 text and Europe PMC record: ~10 bit/s behaviour, ~$10^9$ bit/s sensory |
 | attardo2015 | A | PMC full text: mean spine lifetime ~1–2 weeks (mouse CA1) |
 | holtmaat2005 | A | Europe PMC abstract: most thick neocortical spines persist for months |
 | stuart1998 | A | PMC full text: membrane time constant 12.4 and 20.9 ms |

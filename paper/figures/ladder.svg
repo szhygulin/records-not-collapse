@@ -32,26 +32,23 @@
   <text x="140" y="548" font-size="14" font-style="italic" fill="#333333">Examples: any massive system; the observer of de Sitter algebras.</text>
 
   <!-- right-hand annotations -->
-  <line x1="680" y1="570" x2="680" y2="110" stroke="#3b6e99" stroke-width="3" marker-end="url(#arrow)"/>
-  <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 z" fill="#3b6e99"/>
-    </marker>
-  </defs>
-  <text x="700" y="140" font-size="14" font-weight="bold" fill="#3b6e99">Record view:</text>
-  <text x="700" y="160" font-size="14" fill="#333333">graded proto-experience</text>
-  <text x="700" y="180" font-size="14" fill="#333333">grows with entropy production</text>
-  <text x="700" y="200" font-size="14" fill="#333333">spent on persistent records</text>
-  <text x="700" y="220" font-size="14" fill="#333333">that are integrated and used.</text>
+  <text x="660" y="140" font-size="14" font-weight="bold" fill="#3b6e99">Record view (§4):</text>
+  <text x="660" y="160" font-size="14" fill="#333333">degree of proto-experience</text>
+  <text x="660" y="180" font-size="14" fill="#333333">= entropy production</text>
+  <text x="660" y="200" font-size="14" fill="#333333">× information in records the</text>
+  <text x="660" y="220" font-size="14" fill="#333333">system's own dynamics run on,</text>
+  <text x="660" y="240" font-size="14" fill="#333333">per gram. Rungs are capacities,</text>
+  <text x="660" y="260" font-size="14" fill="#333333">not factors in this measure.</text>
 
-  <text x="700" y="400" font-size="14" fill="#333333">Lowest rung that carries</text>
-  <text x="700" y="420" font-size="14" fill="#333333">any proto-experience on</text>
-  <text x="700" y="440" font-size="14" fill="#333333">the record view.</text>
+  <text x="660" y="380" font-size="14" fill="#333333">Lowest rung with records.</text>
+  <text x="660" y="400" font-size="14" fill="#333333">Scores only if the system's</text>
+  <text x="660" y="420" font-size="14" fill="#333333">own dynamics run on them;</text>
+  <text x="660" y="440" font-size="14" fill="#333333">a crater does not.</text>
 
-  <text x="700" y="496" font-size="14" font-weight="bold" fill="#777777">Quantum-gravity observers</text>
-  <text x="700" y="516" font-size="14" fill="#777777">mostly stop here: clocks,</text>
-  <text x="700" y="536" font-size="14" fill="#777777">some with decoherence,</text>
-  <text x="700" y="556" font-size="14" fill="#777777">none with memory.</text>
+  <text x="660" y="496" font-size="14" font-weight="bold" fill="#777777">Quantum-gravity observers</text>
+  <text x="660" y="516" font-size="14" fill="#777777">mostly stop here: clocks,</text>
+  <text x="660" y="536" font-size="14" fill="#777777">some with decoherence,</text>
+  <text x="660" y="556" font-size="14" fill="#777777">none with memory.</text>
 
   <text x="40" y="625" font-size="12" fill="#777777">Rungs 1–2 were common long before life, so there is no paradox about "observers before observers".</text>
 </svg>

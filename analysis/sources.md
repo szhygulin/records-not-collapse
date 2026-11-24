@@ -23,7 +23,6 @@ The **Read** column gives the verification level: *full text*, *abstract* or *ve
 | `SIGNAL_OF_TOTAL` | signalling takes at least 55% of brain energy | engl2015, [PMC4560575](https://pmc.ncbi.nlm.nih.gov/articles/PMC4560575/) | Discussion | full text | Inferred from sodium-pump block experiments. |
 | (text only) | protein synthesis takes no more than ~1.3% of brain ATP | engl2015 | "Proteins and phospholipids synthesis…" | full text | A theoretical estimate from rat protein turnover. |
 | `FLY_J_PER_BIT` | about 10 mJ/bit for long-term memory | girard2023, [arXiv:2301.09565](https://arxiv.org/abs/2301.09565) | abstract; Discussion | full text | Unreviewed preprint. Drosophila, from other groups' behavioural data. |
-| (text only) | behaviour ~10 bit/s; sensory input ~$10^9$ bit/s | zheng2025, [arXiv:2408.10234](https://arxiv.org/abs/2408.10234) | abstract; §2 | full text | Review-based estimates. |
 
 ## GPU and language models
 
@@ -33,7 +32,7 @@ The **Read** column gives the verification level: *full text*, *abstract* or *ve
 | `FLOPS` | 1,979 TFLOPS BF16 with sparsity, so about 989 dense | nvidiah100; andersch2022, [NVIDIA blog](https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/) | spec table; blog Table 1 (1000 dense, preliminary) | vendor page | Peak figures. |
 | `MFU` | 38–43% BF16 model-FLOPs utilisation | grattafiori2024, [arXiv:2407.21783](https://arxiv.org/abs/2407.21783) | Table 4 | full text | Measured in Llama 3 pre-training. |
 | `DIE_CM2` | 814 mm² | andersch2022 | GH100 paragraph; Table 3 | vendor page | |
-| `HGX_KG` | HGX H100 8-GPU baseboard, "Product weight 24 kg" | nvidiahgxpcf, [NVIDIA PCF summary](https://images.nvidia.com/aem-dam/Solutions/documents/HGX-H100-PCF-Summary.pdf) | p. 1 | vendor page | The whole baseboard: eight H100 SXM GPUs with 640 GB HBM3, NVSwitch chips and board. Its power is taken as 8 × 700 W, which leaves out the switches. |
+| `HGX_KG`, `HGX_W` | HGX H100 8-GPU baseboard, "Product weight 24 kg"; "Typical power consumption 5600 W" | nvidiahgxpcf, [NVIDIA PCF summary](https://images.nvidia.com/aem-dam/Solutions/documents/HGX-H100-PCF-Summary.pdf) | p. 1 | vendor page | The whole baseboard: eight H100 SXM GPUs with 640 GB HBM3, NVSwitch chips and board. The power figure is NVIDIA's typical draw for the whole baseboard, equal to 8 × 700 W. |
 | `DGX_KG`, `DGX_W` | DGX H100 system weight 287.6 lb (130.45 kg); 10.2 kW max | nvidiadgxh100, [DGX H100/H200 User Guide](https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html) | Hardware Overview, Table 2 "Mechanical Specifications" and Table 3 "Power Specifications" | vendor page | Maximum rated power, not measured draw. The datasheet gives the same power ("~10.2kW max") but no weight. |
 | `RHO_SI` | 2.329 g/cm³ | henins1964, [PMC6628575](https://pmc.ncbi.nlm.nih.gov/articles/PMC6628575/) | abstract | full text | |
 | `WAFER_CM` | 775 ± 25 µm for a 300 mm wafer | svmisv029, [SVMI SV029](https://svmi.com/wp-content/uploads/2021/01/SV029.pdf) | geometry table | vendor page | One vendor's sheet, not the SEMI standard. Used as an upper bound on die thickness. |
@@ -43,8 +42,10 @@ The **Read** column gives the verification level: *full text*, *abstract* or *ve
 | `WH_PROMPT_GOOGLE` | 0.24 Wh per median Gemini Apps text prompt | elsworth2025, [arXiv:2508.15734](https://arxiv.org/abs/2508.15734) | abstract; §4.1; Table 1 | full text | Includes host, idle machines and data-centre overhead. The "median" is a model-level statistic (§3.4). |
 | `GPU_H_405B` | 30.84M H100 hours at 700 W | meta2024, [model card](https://raw.githubusercontent.com/meta-llama/llama-models/main/models/llama3_1/MODEL_CARD.md) | "Hardware and Software" table | full text | Meta's estimate. The GPU hours may include work beyond pre-training. |
 | `N_GPU_405B` | up to 16K H100 GPUs | grattafiori2024 | §3.3.1 | full text | Used only to convert GPU hours to wall-clock time (~78 days). |
+| `PARAMS_405B` | 405 billion parameters | meta2024 | model card | full text | Nominal size. |
+| `PARAMS_GPT3` | 175 billion parameters | patterson2021 | Table 4 | full text | |
 | `BITS_PER_PARAM` | 2 bits of knowledge per parameter | allenzhu2024, [arXiv:2404.05405](https://arxiv.org/abs/2404.05405) | abstract; §1 | full text | Synthetic biography data, with 1,000 exposures per fact. An upper bound on extractable knowledge, not total weight information. |
-| `E_GPT3` | 1,287 MWh | patterson2021, [arXiv:2104.10350](https://arxiv.org/abs/2104.10350) | §3; Table 4 | full text | The authors' estimate from OpenAI-supplied inputs. Not metered. |
+| `E_GPT3` | 1,287 MWh | patterson2021, [arXiv:2104.10350](https://arxiv.org/abs/2104.10350) | §3; Table 4 | full text | Measured average GPU-system power (host included) × training time × a data-centre PUE of 1.10, from OpenAI-supplied inputs; not a metered energy total. |
 
 ## Assumed, no source
 
