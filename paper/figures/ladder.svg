@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="bold" fill="#1a1a1a">The ladder of observerhood</text>
+  <text x="40" y="70" font-size="14" fill="#555555">Each rung adds one capacity to the rung below. Clock + record is not yet life; life adds self-maintenance.</text>
+
+  <!-- rails -->
+  <line x1="120" y1="100" x2="120" y2="600" stroke="#888888" stroke-width="4"/>
+  <line x1="640" y1="100" x2="640" y2="600" stroke="#888888" stroke-width="4"/>
+
+  <!-- rung 4 -->
+  <rect x="120" y="110" width="520" height="100" fill="#d6e4f0" stroke="#3b6e99" stroke-width="2"/>
+  <text x="140" y="140" font-size="18" font-weight="bold" fill="#1a1a1a">4  Record integrated into a self-model</text>
+  <text x="140" y="164" font-size="14" fill="#333333">Records are bound into a model the system keeps of itself and uses to act.</text>
+  <text x="140" y="188" font-size="14" font-style="italic" fill="#333333">Example: a waking brain.</text>
+
+  <!-- rung 3 -->
+  <rect x="120" y="230" width="520" height="100" fill="#e3edf5" stroke="#3b6e99" stroke-width="2"/>
+  <text x="140" y="260" font-size="18" font-weight="bold" fill="#1a1a1a">3  Record used for self-maintenance</text>
+  <text x="140" y="284" font-size="14" fill="#333333">Records about the environment are causally needed for the system to persist.</text>
+  <text x="140" y="308" font-size="14" font-style="italic" fill="#333333">Example: a bacterium adapting to a chemical gradient.</text>
+
+  <!-- rung 2 -->
+  <rect x="120" y="350" width="520" height="100" fill="#eef3f8" stroke="#3b6e99" stroke-width="2"/>
+  <text x="140" y="380" font-size="18" font-weight="bold" fill="#1a1a1a">2  Irreversible record</text>
+  <text x="140" y="404" font-size="14" fill="#333333">A persistent, decohered trace whose formation produced entropy.</text>
+  <text x="140" y="428" font-size="14" font-style="italic" fill="#333333">Examples: a crater, a mineral track, a glowing fullerene.</text>
+
+  <!-- rung 1 -->
+  <rect x="120" y="470" width="520" height="100" fill="#f6f6f6" stroke="#888888" stroke-width="2"/>
+  <text x="140" y="500" font-size="18" font-weight="bold" fill="#1a1a1a">1  Clock</text>
+  <text x="140" y="524" font-size="14" fill="#333333">A degree of freedom with energy bounded below that can tell time.</text>
+  <text x="140" y="548" font-size="14" font-style="italic" fill="#333333">Examples: any massive system; the observer of de Sitter algebras.</text>
+
+  <!-- right-hand annotations -->
+  <line x1="680" y1="570" x2="680" y2="110" stroke="#3b6e99" stroke-width="3" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#3b6e99"/>
+    </marker>
+  </defs>
+  <text x="700" y="140" font-size="14" font-weight="bold" fill="#3b6e99">Record view:</text>
+  <text x="700" y="160" font-size="14" fill="#333333">graded proto-experience</text>
+  <text x="700" y="180" font-size="14" fill="#333333">grows with entropy production</text>
+  <text x="700" y="200" font-size="14" fill="#333333">spent on persistent records</text>
+  <text x="700" y="220" font-size="14" fill="#333333">that are integrated and used.</text>
+
+  <text x="700" y="400" font-size="14" fill="#333333">Lowest rung that carries</text>
+  <text x="700" y="420" font-size="14" fill="#333333">any proto-experience on</text>
+  <text x="700" y="440" font-size="14" fill="#333333">the record view.</text>
+
+  <text x="700" y="496" font-size="14" font-weight="bold" fill="#777777">Quantum-gravity observers</text>
+  <text x="700" y="516" font-size="14" fill="#777777">mostly stop here: clocks,</text>
+  <text x="700" y="536" font-size="14" fill="#777777">some with decoherence,</text>
+  <text x="700" y="556" font-size="14" fill="#777777">none with memory.</text>
+
+  <text x="40" y="625" font-size="12" fill="#777777">Rungs 1–2 were common long before life, so there is no paradox about "observers before observers".</text>
+</svg>
