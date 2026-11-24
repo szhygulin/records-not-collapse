@@ -44,6 +44,7 @@ Network access from the authoring machine was limited, so the scholarly APIs wer
 | C2 | Orch-OR and collapse, IIT and its critics, the free-energy principle |
 | D | Nonequilibrium brain dynamics, the metabolic confound, seizures, estimators, open datasets |
 | E | Novelty search |
+| F | Numbers for §5.6: brain energetics and memory; GPU hardware, language-model architecture, inference and training energy. Each value was found in one pass and re-checked against the source by a second, independent pass. Details are in `analysis/sources.md`. |
 
 **Sources queried.**
 
@@ -282,3 +283,28 @@ Tiers:
 | yuan2026 | P | Abstract via OpenAlex |
 | devine2026 | P | Abstract via OpenAlex |
 | schneider2026 | P | Book chapter; abstract via OpenAlex |
+| balasubramanian2021 | A | PMC full text: ~20 W, 17–20 W from glucose uptake (§5.6) |
+| herculanohouzel2012 | A | PMC full text: brain ~1.5 kg (§5.6) |
+| tang2001 | B | Europe PMC abstract: $1.64\times10^{14}$ neocortical synapses |
+| lennie2003 | A | Author PDF: 0.16 and 0.94 spikes/s/neuron sustainable |
+| engl2015 | A | Europe PMC full text: signalling ≥ 55%; protein synthesis ≤ 1.3% |
+| howarth2012 | A | PMC full text: postsynaptic glutamate receptors 50% of signalling |
+| karbowski2019 | A | arXiv text of the published paper: plasticity 4.0–11.2% of fast transmission |
+| girard2023 | P | arXiv full text read: ~10 mJ/bit for long-term memory in Drosophila |
+| bartol2015 | A | Europe PMC full text: 26 strengths, 4.7 bits per synapse |
+| landauer1986 | A | PDF text: ~$10^9$ bits; 1.2 and 2.3 bit/s; loss rate Table 1 |
+| zheng2025 | A | arXiv v2 text and Europe PMC record: ~10 bit/s behaviour, ~$10^9$ bit/s sensory |
+| attardo2015 | A | PMC full text: mean spine lifetime ~1–2 weeks (mouse CA1) |
+| holtmaat2005 | B | Europe PMC abstract: most thick neocortical spines persist for months |
+| stuart1998 | A | PMC full text: membrane time constant 12.4 and 20.9 ms |
+| nvidiah100 | A | Vendor page: 700 W TDP; 1,979 TFLOPS BF16 with sparsity |
+| andersch2022 | A | Vendor blog: 814 mm², 80 billion transistors, 1000 TFLOPS dense (preliminary) |
+| grattafiori2024 | A | arXiv PDF: Table 3 architecture; Table 4 utilisation; 16K GPUs |
+| henins1964 | A | PMC full text: silicon density 2.329 g/cm³ |
+| svmisv029 | A | Vendor sheet: 300 mm wafer 775 ± 25 µm |
+| samsi2023 | A | arXiv text: 3–4 J per output token, LLaMA 65B (estimate) |
+| elsworth2025 | A | arXiv text: 0.24 Wh median Gemini Apps text prompt |
+| meta2024 | A | GitHub model card: 30.84M H100 hours for 405B at 700 W |
+| patterson2021 | A | arXiv text: GPT-3 1,287 MWh |
+| allenzhu2024 | A | arXiv text: 2 bits of knowledge per parameter |
+| mlcommons2024 | D | MLPerf v4.1 result log on GitHub: 21,605.79 tokens/s, Server scenario |

@@ -2,7 +2,9 @@ cff-version: 1.2.0
 message: "If you cite this work, please cite it as below. It is a speculative position paper and has not been peer-reviewed."
 title: "Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience"
 authors:
-  - name: "[AUTHOR NAME]"
+  - family-names: Zhygulin
+    given-names: Viacheslav
+    email: s.zhygulin@gmail.com
 version: "draft-2026-11"
 license: CC-BY-4.0
 keywords:
@@ -17,6 +19,8 @@ preferred-citation:
   type: generic
   title: "Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience"
   authors:
-    - name: "[AUTHOR NAME]"
+    - family-names: Zhygulin
+      given-names: Viacheslav
+      email: s.zhygulin@gmail.com
   year: 2026
   notes: "Speculative position paper, not peer-reviewed."

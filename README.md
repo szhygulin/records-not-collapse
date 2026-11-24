@@ -1,6 +1,6 @@
 # Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience
 
-**[AUTHOR NAME]**. Draft of November 2026.
+**Viacheslav Zhygulin** (<s.zhygulin@gmail.com>). Draft of November 2026.
 
 > **Status:** a speculative position paper in philosophy of mind and philosophy of physics. It has **not been peer-reviewed**. It argues for a conditional thesis and states the author's credences and what would falsify the thesis.
 
@@ -15,6 +15,7 @@ The paper:
 - surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience, and finds the thesis partially anticipated but not stated as a whole;
 - separates the clock-observers that recent quantum-gravity work needs from the recorder-observers that facts need, and names the missing theorem that would join them;
 - sketches a measure and applies it to stars, processors, logic-gate grids, hot molecules, sleep, seizures and language models;
+- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding that the brain's lead rests on how its records are used, not on what they cost;
 - answers seven objections;
 - ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
 
@@ -29,6 +30,8 @@ The paper:
 | [`notes/literature-review.md`](notes/literature-review.md) | Novelty verdict, search method, null results, and the verification status of every reference |
 | [`notes/corrections.md`](notes/corrections.md) | Every point where the original brief was corrected or dropped against the sources |
 | [`future-work/empirical-plan.md`](future-work/empirical-plan.md) | Proposed confound-controlled test on named open datasets |
+| [`analysis/napkin.py`](analysis/napkin.py) | The arithmetic behind §5.6, the brain-versus-language-model numbers (`python3 analysis/napkin.py`, standard library only) |
+| [`analysis/sources.md`](analysis/sources.md) | Source, locator and verification level of every input to `napkin.py` |
 
 ## Building the PDF
 
@@ -40,9 +43,9 @@ The script needs [Pandoc](https://pandoc.org/) 3.x. It first tries Tectonic (LaT
 
 ## How to cite
 
-See [`CITATION.cff`](CITATION.cff). Until the author line is final:
+See [`CITATION.cff`](CITATION.cff):
 
-> [AUTHOR NAME] (2026). *Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience.* Speculative position paper, not peer-reviewed. GitHub repository.
+> Zhygulin, V. (2026). *Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience.* Speculative position paper, not peer-reviewed. GitHub repository.
 
 ## AI assistance disclosure
 

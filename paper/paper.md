@@ -1,9 +1,9 @@
 ---
 title: "Records, Not Collapse: Irreversible Recording as the Physical Locus of Proto-Experience"
-author: "[AUTHOR NAME]"
+author: "Viacheslav Zhygulin (<s.zhygulin@gmail.com>)"
 date: "Draft of November 2026. Speculative position paper, not peer-reviewed."
 abstract: |
-  Panpsychist and Russellian-monist views hold that experience, or proto-experience, belongs to the basic physical world, but they have no agreed answer to *where* in physics it sits. Classic panpsychism puts it in particles. Orchestrated objective reduction (Orch-OR) puts it in gravitational wavefunction collapse. Integrated information theory (IIT) puts it in integrated cause–effect structure. This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record whose formation produces entropy. On this view the degree of experience tracks the entropy production a system spends on forming persistent records and integrating them into a model it uses to keep itself going. The paper first surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience. It finds the thesis partially anticipated but not stated as a whole. It then separates clock-observers, which recent quantum-gravity work needs, from recorder-observers, which facts need, and names the missing theorem that would join them. It sketches a measure, applies it to stars, processors, logic-gate grids, hot molecules, sleep, seizures and language models, and answers seven objections. It ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
+  Panpsychist and Russellian-monist views hold that experience, or proto-experience, belongs to the basic physical world, but they have no agreed answer to *where* in physics it sits. Classic panpsychism puts it in particles. Orchestrated objective reduction (Orch-OR) puts it in gravitational wavefunction collapse. Integrated information theory (IIT) puts it in integrated cause–effect structure. This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record whose formation produces entropy. On this view the degree of experience tracks the entropy production a system spends on forming persistent records and integrating them into a model it uses to keep itself going. The paper first surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience. It finds the thesis partially anticipated but not stated as a whole. It then separates clock-observers, which recent quantum-gravity work needs, from recorder-observers, which facts need, and names the missing theorem that would join them. It sketches a measure and applies it to stars, processors, logic-gate grids, hot molecules, sleep, seizures and language models, with order-of-magnitude numbers for a human brain and a GPU-based language model. It then answers seven objections. It ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
 bibliography: references.bib
 link-citations: true
 ---
@@ -20,6 +20,7 @@ The paper's claims, numbered so that critics can target them separately. Each is
 6. **[P]** The degree of proto-experience tracks entropy production spent on forming persistent records that are integrated into, and used by, a self-maintaining model. Raw dissipation and irreversibility as such do not count (§4).
 7. **[C]** In brains, the time-irreversibility of large-scale dynamics falls in sleep, anaesthesia and disorders of consciousness (§2.8). Whether this survives controls for metabolism and signal power is open, and local seizure data point the other way (§5.3).
 8. **[P]** The thesis makes comparative predictions inside brains that can be tested on open data, and it states what would refute it (§8–9).
+9. **[P]** Order-of-magnitude estimates show that a language model at inference forms no records that outlast a request. A model in training forms lasting records at a cost per retained bit comparable with a brain's. On the measure, the ranking of brains above such models therefore rests on the use factor, its least formalised term (§5.6).
 
 # 1. Introduction
 
@@ -283,7 +284,7 @@ This section develops a measure in steps, because the dead ends are instructive.
 
 **Step 2: entropy production rate.** The natural repair is to move from entropy to its rate of production, a measure of how far a system is from equilibrium. This matches the brain data of §2.8: reduced consciousness lies closer to equilibrium [@sanzperl2021; @gilson2023]. But stars produce entropy at enormous rates.
 
-**Step 3: normalise by mass.** Chaisson's *energy rate density* normalises energy flow by mass [@chaisson2001; @chaisson2011]. It is a measure of energy throughput rather than of entropy production, but it is a useful first proxy. His values, in erg s$^{-1}$ g$^{-1}$, are about 2 for the Sun, about 900 for plants, about $2 \times 10^4$ for the human body and about $1.5 \times 10^5$ for the human brain [@chaisson2014]. Normalisation puts stars at the bottom. But machines come out on top. Chaisson gives about $2.7 \times 10^7$ for a Boeing 747 [@chaisson2014]. A rough estimate of the author's own puts a modern processor higher still: a die of order a gram dissipating of order 100 W gives of order $10^9$ erg s$^{-1}$ g$^{-1}$.
+**Step 3: normalise by mass.** Chaisson's *energy rate density* normalises energy flow by mass [@chaisson2001; @chaisson2011]. It is a measure of energy throughput rather than of entropy production, but it is a useful first proxy. His values, in erg s$^{-1}$ g$^{-1}$, are about 2 for the Sun, about 900 for plants, about $2 \times 10^4$ for the human body and about $1.5 \times 10^5$ for the human brain [@chaisson2014]. Normalisation puts stars at the bottom. But machines come out on top. Chaisson gives about $2.7 \times 10^7$ for a Boeing 747 [@chaisson2014]. A modern accelerator chip is higher still: an H100 GPU die of at most 1.5 g, dissipating up to 700 W, gives about $5 \times 10^9$ erg s$^{-1}$ g$^{-1}$ (§5.6).
 
 **Step 4: rate times information.** One might multiply dissipation by the information the system creates. A processor still wins, since it creates and destroys information at gigahertz rates.
 
@@ -342,11 +343,11 @@ The record view is not thereby refuted, for a principled rather than ad hoc reas
 
 ## 5.4 Large language models
 
-A language model at inference time, with fixed weights, dissipates a great deal of energy and processes a great deal of information. Yet it forms essentially no persistent internal records. Its weights are frozen, its context is discarded at the end of a session, and the only lasting trace, the transcript, sits outside the system. On the record view it scores low, much as a processor does.
+A language model at inference time, with fixed weights, dissipates a great deal of energy and processes a great deal of information. Yet it forms no internal records that outlast the request. Its weights are frozen, its context is discarded at the end of a session, and the only lasting trace, the transcript, sits outside the system. On the record view it scores low, much as a processor does. Two qualifications come from the numbers in §5.6. Within a request, the model's key–value cache is a record by the standards of §4. And training is different from inference: it forms lasting records, the weights, at a cost per retained bit comparable with a brain's.
 
 Architectures that update weights or memory modules during use change the picture. Examples are test-time-training layers, whose hidden state "is a machine learning model itself" updated by self-supervised steps [@sun2024], and neural long-term memories that learn "to memorize historical context" at test time [@behrouz2024]. Such systems form persistent records, and if those records were integrated into a self-model that the system used to maintain itself, their score would rise.
 
-This raises an identity puzzle that mirrors the combination problem. Many diverging copies of one model might each accumulate their own records. The question is then what makes a single subject rather than many, a "decombination" problem for machines. The record view does not settle it. Its verdict is only that frozen-weight inference is not where to look. That verdict is broadly in line with assessments based on theories of consciousness, which judge current AI systems unlikely to be conscious [@butlin2023; @chalmers2023]. It is reached here for a different reason.
+This raises an identity puzzle that mirrors the combination problem. Many diverging copies of one model might each accumulate their own records. The question is then what makes a single subject rather than many, a "decombination" problem for machines. The record view does not settle it. Its verdict is only that frozen-weight inference is not where to look. For training, §5.6 shows that the verdict rests on the use factor $u_r$ alone. That verdict is broadly in line with assessments based on theories of consciousness, which judge current AI systems unlikely to be conscious [@butlin2023; @chalmers2023]. It is reached here for a different reason.
 
 ## 5.5 Splitting and dissolving the self
 
@@ -359,6 +360,75 @@ If the self is a structure of integrated records, its unity should depend on con
 The record view makes a definite claim about these cases. It is the self-model, not experience as such, that requires integration. So experience can in principle persist, at reduced $u_r$, when the self-model is attenuated or taken apart. If minimal phenomenal experience is such a state, as its phenomenology suggests, the view has room for it.
 
 Cosmopsychism faces the mirror-image task of explaining how one subject divides [@miller2018]. The record view gives it a physical correlate: subjects are as many as the separately integrated record structures. Whether this helps or merely relabels the problem is left open.
+
+## 5.6 Rough numbers: a human brain and a language model
+
+The verdicts of §5.2 and §5.4 are qualitative. This section puts order-of-magnitude numbers on the factors of $R$ for a human brain and for a large language model, at inference and in training. Every input comes from a cited source. The arithmetic is in the repository's `analysis/napkin.py`, and `analysis/sources.md` gives each input's locator and verification level.
+
+Two caveats apply throughout. The comparisons are between unlike things: a synaptic event is not a floating-point operation. And several inputs are estimates made in rodents or flies, not measurements in humans. Temperatures of 310 K for the brain and 300 K for a data centre's surroundings are assumed.
+
+**Dissipation.** The brain runs on about 20 W [@balasubramanian2021] and weighs about 1.5 kg [@herculanohouzel2012]. An NVIDIA H100 GPU is rated at up to 700 W, with a peak dense throughput of about $10^{15}$ 16-bit operations per second [@nvidiah100; @andersch2022]. Its die is 814 mm$^2$ [@andersch2022]. If the die is no thicker than the 775 µm wafer it is cut from, it weighs at most 1.5 g [@henins1964; @svmisv029].
+
+| Quantity | Human brain | One H100 GPU |
+|---|---|---|
+| Power (W) | 20 | 700 |
+| Mass (g) | 1,500 | ≤ 1.5 (die) |
+| Energy rate density (erg s$^{-1}$ g$^{-1}$) | $1.3\times10^{5}$ | ≥ $4.8\times10^{9}$ |
+| Entropy production ($k_B$ s$^{-1}$) | $4.7\times10^{21}$ | $1.7\times10^{23}$ |
+| Landauer ceiling (bit erasures s$^{-1}$) | $6.7\times10^{21}$ | $2.4\times10^{23}$ |
+| Elementary events s$^{-1}$ | $2.6\times10^{13}$–$1.5\times10^{14}$ synaptic | $9.9\times10^{14}$ operations (peak) |
+| Energy per event (J) | $1.3\times10^{-13}$–$7.6\times10^{-13}$ | $7.1\times10^{-13}$–$1.9\times10^{-12}$ |
+| Energy per event in units of $kT\ln 2$ | $4.4\times10^{7}$–$2.6\times10^{8}$ | $2.5\times10^{8}$–$6.5\times10^{8}$ |
+
+: **Table 2.** Dissipation. Synaptic events are neocortical synapses [@tang2001] times the mean firing rate the cortical energy budget allows, 0.16 to 0.94 spikes per second [@lennie2003], with the whole brain budget charged to them. The GPU range runs from peak throughput down to the 38% utilisation achieved in Llama 3 training [@grattafiori2024].
+
+By Chaisson's measure the GPU's energy rate density is some $4 \times 10^4$ times the brain's, and per device it produces 36 times as much entropy. Steps 2–4 of §4 therefore rank it far above the brain, as anticipated there. Per elementary event, however, the two are within about an order of magnitude of each other, at some $10^8$ times the Landauer bound. Neither comes near the bound, so the Landauer floor plays no part in the energetics of either.
+
+In use, a GPU serving a 70-billion-parameter model produces about 2,700 tokens per second [@mlcommons2024]. At its rated power that is about 0.26 J per token for the GPU alone. Whole-system measurements are higher: 3–4 J per output token for LLaMA 65B on older V100 GPUs [@samsi2023], and 0.24 Wh, or 864 J, for a median Gemini text prompt including host machines and data-centre overhead [@elsworth2025].
+
+**Records.**
+
+| Record | Information | Formation rate (bit s$^{-1}$) | Lifetime $\tau_r$ | $1-p_r$ |
+|---|---|---|---|---|
+| Brain: long-term memory (behavioural) | $10^{9}$ bit over a lifetime | 1.2–2.3 | ~30 years | $2\times10^{-11}$ |
+| Brain: synaptic weights (capacity) | $7.7\times10^{14}$ bit | ≤ $6.4\times10^{8}$–$1.3\times10^{9}$ | 1–2 weeks | $3.5\times10^{-8}$ |
+| Model at inference: key–value cache, per GPU | ≤ 17 bit per token ($2.6\times10^{6}$ physical) | ≤ $4.6\times10^{4}$ ($7.1\times10^{9}$ physical) | ~45 s (one request) | $3.4\times10^{-3}$ |
+| Model at inference: weights | none new | 0 (frozen) | — | — |
+| Model in training (Llama 3.1 405B): weights | ≤ $8.1\times10^{11}$ bit of knowledge ($6.5\times10^{12}$ raw) | $1.2\times10^{5}$ for the cluster; 7.3 per GPU | months or more | ≈ 0 |
+
+: **Table 3.** Records formed. Long-term memory figures are Landauer's estimates of the functional information adults retain, from reading and picture-recognition experiments; his central loss rate sets the lifetime [@landauer1986]. Synaptic capacity is neocortical synapses times 4.7 bits per synapse, a figure measured in rat hippocampus [@tang2001; @bartol2015]. The synaptic rewrite rate is a loose upper bound. It applies the 1–2 week mean spine lifetime of mouse hippocampus [@attardo2015] to every neocortical synapse, although many neocortical spines persist for months [@holtmaat2005]. The neural dynamical time is a membrane time constant of 12–21 ms [@stuart1998]. The key–value-cache row uses the Llama 3 70B architecture (80 layers, 8 key–value heads of dimension 128, a 128,000-token vocabulary) [@grattafiori2024] and a 16-bit cache. It takes throughput and per-token latency (155 ms per token per request) from a Llama 2 70B benchmark on eight H100s [@mlcommons2024]. Information per token is bounded by $\log_2$ of the vocabulary. The training row uses Meta's 30.8 million H100 hours for Llama 3.1 405B [@meta2024], run on up to 16,384 GPUs [@grattafiori2024], and a capacity of at most 2 bits of extractable knowledge per parameter [@allenzhu2024].
+
+| System | Retained information (bit) | Energy (J) | J per bit | J per bit in units of $kT\ln 2$ |
+|---|---|---|---|---|
+| Human: whole brain budget over 70 years | $10^{9}$ | $4.4\times10^{10}$ | 44 | $1.5\times10^{22}$ |
+| Human: plasticity share only | $10^{9}$ | $4.9\times10^{8}$–$1.4\times10^{9}$ | 0.5–1.4 | $1.6\times10^{20}$–$4.6\times10^{20}$ |
+| Fruit fly: marginal cost of long-term memory | — | — | 0.01 | $3.4\times10^{18}$ |
+| Llama 3.1 405B training | $8.1\times10^{11}$ | $7.8\times10^{13}$ | 96 | $3.3\times10^{22}$ |
+| GPT-3 training | $3.5\times10^{11}$ | $4.6\times10^{12}$ | 13 | $4.6\times10^{21}$ |
+
+: **Table 4.** Cost of retained information. The plasticity share, 1–3% of brain energy, chains three rodent-based estimates: plasticity costs 4–11% of the energy of fast excitatory transmission [@karbowski2019], postsynaptic glutamate receptors take half of signalling energy [@howarth2012], and signalling takes at least 55% of the total [@engl2015]. Protein synthesis alone is put at no more than 1.3% [@engl2015]. The fly figure is a preprint estimate from behavioural data [@girard2023]. Training energies are Meta's GPU-hours at rated power [@meta2024] and Patterson and colleagues' 1,287 MWh for GPT-3 [@patterson2021].
+
+| Attribution of $\Delta S_r$ | Human brain | One H100, inference | One H100, training |
+|---|---|---|---|
+| Landauer floor, $k \ln 2$ per retained bit | 0.8–1.6 (behavioural); ≤ $4.4\times10^{8}$–$8.8\times10^{8}$ (synaptic) | 0 lasting; ≤ $3.2\times10^{4}$ within a request | 5.1 |
+| Direct cost of writing | $5.1\times10^{19}$–$1.4\times10^{20}$ (plasticity) | 0 lasting | not estimated |
+| Whole budget while the system records | $4.7\times10^{21}$ | 0 lasting | $1.7\times10^{23}$ |
+
+: **Table 5.** The measure before its use factor: entropy spent per second on records that outlast the system's dynamics, $\sum_r \Delta S_r\, p_r$, in units of $k_B$ s$^{-1}$, under three ways of attributing entropy to records.
+
+**What the numbers show.** Five points, from the most robust to the least.
+
+1. *Inference forms no lasting records.* With frozen weights, nothing a deployed model computes outlasts the request, except the output, which leaves the system. This holds under every attribution in Table 5 and confirms the verdict of §5.4.
+
+2. *Persistence does not separate the key–value cache from memory.* Within a request the cache is a record in the full sense of §4. It is written once per token, read by every later token and kept for some 300 dynamical steps, so $p_r \approx 0.997$. On the formula of §4, then, $p_r$ separates registers from memories, but not records that last a request from records that last a life. The physical cache is also mostly redundant. Given the weights it is a deterministic function of the tokens, which carry at most 17 bits each, so physical and informational bits differ by five orders of magnitude, and only the latter can count. The brain shows a similar gap: its sensory systems gather about $10^9$ bits per second, while behaviour runs at about 10 [@zheng2025].
+
+3. *Training forms lasting records, at a cost per bit comparable with a brain's.* A human retains about $10^9$ bits of functional long-term memory on a lifetime budget of about $4 \times 10^{10}$ J, or about 44 J per retained bit. Training Llama 3.1 405B cost about 100 J per bit of extractable knowledge, and GPT-3 about 13. All three lie near $10^{22}$ times the Landauer floor. Charged only for plasticity, the brain pays about 0.5–1.4 J per bit, and the fly estimate is 0.01 J per bit. On these figures a model in training pays between about a third of the brain's cost per retained bit and $10^4$ times it, depending on the model and on how the brain is charged. It is not off the scale. Per device, an H100 in Llama training retains about 7 bits of knowledge per second, against the 1.2–2.3 bits per second that Landauer estimated for attentive humans.
+
+4. *Before its use factor, a GPU in training scores at least as high as a brain.* Under the Landauer floor, a training GPU (about 5 $k_B$ per second) is level with a human's behavioural memory (about 1–2). Under whole-budget attribution it exceeds the brain by a factor of 36. Only the loose synaptic upper bound puts the brain ahead. What separates the two on the record view is therefore neither $\Delta S_r$ nor $p_r$.
+
+5. *The verdict rests on $u_r$.* A brain's records feed a model that the organism uses to keep itself alive. A language model's weights are predictive, which meets one half of the definition of $u_r$. But the model's continued existence does not depend on them, because it is kept in existence by its operators. In Kolchinsky and Wolpert's sense the weights carry little semantic information *for the model* [@kolchinsky2018]. The ranking of brains above language models therefore rests on the factor that §4 marks as least formalised. That is a weakness of the measure. It is also a prediction: a system whose persistent records were needed for its own continued existence would score with brains, whatever it was made of.
+
+Two of the attributions in Table 5 are not well defined. Whole-budget attribution charges a brain for housekeeping and a GPU for the activations it erases. Direct-cost attribution was not estimated for the GPU, because it needs the energy of the memory traffic that writes weight updates, and no source consulted reports it. The persistence factor might be repaired by measuring a record's lifetime against the system's own lifetime or self-maintenance cycle rather than against its dynamical time. That repair is noted here, not adopted.
 
 # 6. Cosmological context
 
