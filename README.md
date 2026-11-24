@@ -15,7 +15,7 @@ The paper:
 - surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience, and finds the thesis partially anticipated but not stated as a whole;
 - separates the clock-observers that recent quantum-gravity work needs from the recorder-observers that facts need, and names the missing theorem that would join them;
 - applies that measure, on which neither dissipation nor storage scores alone, to stars, processors, storage devices, logic-gate grids, hot molecules, sleep, seizures and language models;
-- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding them within a factor of about 300 of each other when bits are counted as storage capacity, with the lead set by the mass of the GPU packages, which no source gives, and the model ahead when bits are counted as functional knowledge;
+- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding them within a factor of about 300 of each other when bits are counted as storage capacity, with the lead set by the mass of the GPU packages, which no source consulted gives, and the model ahead when bits are counted as functional knowledge;
 - answers seven objections;
 - ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
 
@@ -23,7 +23,7 @@ The paper:
 
 | Path | What it is |
 |---|---|
-| [`paper/paper.md`](paper/paper.md) | Main text (Pandoc Markdown, about 12,600 words) |
+| [`paper/paper.md`](paper/paper.md) | Main text (Pandoc Markdown, about 13,000 words) |
 | [`paper/paper.pdf`](paper/paper.pdf) | Built PDF |
 | [`paper/references.bib`](paper/references.bib) | Bibliography; every entry verified against a primary record |
 | [`paper/figures/ladder.svg`](paper/figures/ladder.svg) | Figure 1, the ladder of observerhood (PNG alongside) |

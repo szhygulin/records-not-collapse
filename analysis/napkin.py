@@ -87,8 +87,6 @@ def landauer(T):
     return KB * T * LN2
 
 
-
-
 def sigma(watts, kelvin):
     """Entropy production rate of a steady state, in k_B per second."""
     return watts / kelvin / KB
@@ -182,7 +180,7 @@ def main():
     res = {}
     for name, s_, m, i_f, i_c, qm, qf, qc in rows:
         qi = "" if name.startswith("Human") else "≤ "
-        print(f"| {name} | {sci(s_)} | {qm}{sci(m)} | {sci(s_ / m)} | {qi}{sci(i_f)} | {sci(i_c)} | {qf}{sci(s_ * i_f / m)} | {qc}{sci(s_ * i_c / m)} |")
+        print(f"| {name} | {sci(s_)} | {qm}{sci(m)} | {qc}{sci(s_ / m)} | {qi}{sci(i_f)} | {sci(i_c)} | {qf}{sci(s_ * i_f / m)} | {qc}{sci(s_ * i_c / m)} |")
         res[name] = (s_ / m, s_ * i_f / m, s_ * i_c / m)
     b = res["Human brain"]
     print("\nRatios to the human brain (density; R functional; R capacity):")
