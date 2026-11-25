@@ -8,14 +8,14 @@
 
 Panpsychist and Russellian-monist views hold that experience, or proto-experience, belongs to the basic physical world, but they have no agreed answer to *where* in physics it sits. The usual candidates are particles, wavefunction collapse (Orch-OR) and integrated information (IIT).
 
-This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record whose formation produces entropy. On this view the degree of experience tracks $R = \dot\Sigma\, I / M$: a system's entropy production rate, times the information in the persistent records that its own dynamics draw on, per unit of its mass. Recording events make the records; the measure grades how hard a system runs on them.
+This paper argues, conditionally, that if any such view is true, the natural physical bearer of graded proto-experience is the *irreversible recording event*: the formation of a persistent, decohered record, which produces entropy. On this view a system's degree of experience tracks the least entropy it must spend, per gram, on forming persistent records that are integrated into its model of itself.
 
 The paper:
 
 - surveys the relevant work in quantum gravity, quantum foundations, the thermodynamics of information, theories of consciousness and nonequilibrium neuroscience, and finds the thesis partially anticipated but not stated as a whole;
 - separates the clock-observers that recent quantum-gravity work needs from the recorder-observers that facts need, and names the missing theorem that would join them;
-- applies that measure, on which neither dissipation nor storage scores alone, to stars, processors, storage devices, logic-gate grids, hot molecules, sleep, seizures and language models;
-- puts order-of-magnitude numbers on a human brain and a GPU-based language model, finding them within a factor of about 300 of each other when bits are counted as storage capacity, with the lead set by the mass of the GPU packages, which no source consulted gives, and the model ahead when bits are counted as functional knowledge;
+- builds the measure in steps. Weighting information by dissipation per gram ($E\,I/M$, the author's suggestion) serves as a check on information-only measures: it removes IIT's verdict that an inactive grid of logic gates is highly conscious, but it favours computers over brains;
+- applies the measure to hot molecules, logic-gate grids, storage devices, stars, sleep, seizures and language models. A language model at inference forms no lasting internal records and scores near zero, whatever its hardware;
 - answers seven objections;
 - ends with a test that can be pre-registered: does the time-irreversibility of brain dynamics still track consciousness once metabolism and signal power are controlled for?
 
@@ -30,6 +30,7 @@ The paper:
 | [`notes/literature-review.md`](notes/literature-review.md) | Novelty verdict, search method, null results, and the verification status of every reference |
 | [`notes/corrections.md`](notes/corrections.md) | Every point where the original brief was corrected or dropped against the sources |
 | [`future-work/empirical-plan.md`](future-work/empirical-plan.md) | Proposed confound-controlled test on named open datasets |
+| [`future-work/model-attribution-study.md`](future-work/model-attribution-study.md) | Proposed study: do the paper's metrics track graded human judgements of how conscious past AI models are? |
 | [`analysis/napkin.py`](analysis/napkin.py) | The arithmetic behind §5.6, the brain-versus-language-model numbers (`python3 analysis/napkin.py`, standard library only) |
 | [`analysis/sources.md`](analysis/sources.md) | Source, locator and verification level of every input to `napkin.py` |
 

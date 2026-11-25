@@ -6,7 +6,7 @@ This plan expands §8 of the paper. It describes a study; it does not report one
 
 Does the entropy production, or time-irreversibility, of large-scale brain dynamics track the level of consciousness **after** controlling for signal power, signal variance, and metabolic or activity proxies?
 
-The paper's thesis predicts **yes**, on the assumption that irreversibility net of power and metabolism indexes how much information about its stored records the brain's trajectory carries (paper §8). On its measure, metabolism is one factor; a **no** would mean that within brains the measure reduces to energy rate density (paper §5.3). The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
+The paper's thesis predicts **yes**, on the assumption that the irreversibility left after controlling for power and metabolism reflects the formation of lasting, integrated records (paper §8). Measured irreversibility is at best a proxy for $R$, since it also includes activity that forms no such records. On the measure, metabolism is not itself a factor (paper §5.3); a **no** would mean that irreversibility tracks activity and nothing more (paper §8). The main rival explanation, that irreversibility just indexes how busy the brain is, predicts **no** (paper §7, objection 2).
 
 ## 2. Why this has not been settled
 
@@ -79,14 +79,14 @@ For each subject, state and parcel or channel, compute:
 ## 7. Predictions and decision rule (to pre-register)
 
 - **Supports the record view.** The partial effect of consciousness level on irreversibility survives the covariates and the surrogate normalisation, with the same sign as the uncontrolled effect, across at least two independent datasets.
-- **No within-brain support for the information factor.** With adequate power, the partial effect is null once power, variance and activity are controlled. The record view's empirical claim then fails.
-- **Refutes in seizures.** Once data with awareness labels exist, if whole-brain irreversibility, net of covariates, is *higher* during seizures with impaired awareness than during conscious baseline, then the claim that irreversibility marks consciousness fails. The paper's rescue, that in seizures the brain's dynamics carry little information about its stored records, then requires an independent measure of that information. Without one, the rescue is not accepted.
+- **No within-brain support for the record view.** With adequate power, the partial effect is null once power, variance and activity are controlled. Irreversibility then tracks activity, not record formation, and the record view's empirical claim fails.
+- **Refutes in seizures.** Once data with awareness labels exist, if whole-brain irreversibility, net of covariates, is *higher* during seizures with impaired awareness than during conscious baseline, then the claim that irreversibility marks consciousness fails. The paper's rescue, that seizure dynamics form little that is new and integrate little of what they form, then requires an independent measure of record formation. Without one, the rescue is not accepted.
 
 **Power.** Not computed here. Base it on the effect sizes reported in Gilson et al. (2023) and Sanz Perl et al. (2021), discounted for the expected shrinkage under covariate control.
 
 ## 8. Extensions (lower priority)
 
-- Relate irreversibility during retrieval or replay to the amount of learned material drawn on, as a crude proxy for the measure's information factor $I$.
+- Relate irreversibility during encoding to later memory, as a crude behavioural proxy for the rate at which lasting, integrated records are formed.
 - Test whether irreversibility predicts consciousness better than the perturbational complexity index (Casali et al. 2013) when the two are measured together.
 - Apply the same pipeline to datasets with dissociated states, such as ketamine and disorders of consciousness, if access is granted.
 
